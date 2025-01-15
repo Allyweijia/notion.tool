@@ -6,7 +6,7 @@
 #lbl {
     font-family: monospace;
     font-size: xx-large;
-    color: #fcfae6;
+    color: #626262;
     padding: 5px;
     border: 1px solid #ececec;
     text-align: center;
@@ -41,7 +41,7 @@ body{
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth()+1) +'/'+today.getFullYear()  ;
+    var date = dayOfWeek+" " +today.getFullYear() "/" +(today.getMonth()+1) +'/'+ today.getDate() +  ;
 
     var greet;
 
@@ -53,6 +53,6 @@ body{
         greet = 'Good Evening晚安  ';
 
     document.getElementById('lbl').innerHTML =
-          greet+= "Aweijia" +`<div id="date"> It's ${date}</div>`;
+          greet+=`<div id="date"> It's ${date}</div>`;
 </script> 
 </html>
